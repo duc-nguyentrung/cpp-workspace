@@ -3,7 +3,7 @@ using namespace std;
 
 int main(){
     string name;
-    cout << "Hello bro!, wat your name?\n";
+    cout << "Hi bro!, what's your name?\n";
     cout << "...'s answer: ";
     cin >> name;
     cout << "Hello " + name + ". Nice to meet you!";    
