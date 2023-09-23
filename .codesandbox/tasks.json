@@ -4,14 +4,9 @@
 
   // These tasks can be run from CodeSandbox. Running one will open a log in the app.
   "tasks": {
-    "whereis gcc": {
-      "name": "whereis gcc",
-      "command": "whereis gcc",
-      "runAtStart": true
-    },
-    "whereis htop": {
-      "name": "whereis gcc",
-      "command": "whereis htop",
+    "start": {
+      "name": "start: main.cpp",
+      "command": "g++ source/main.cpp -o ./bin/main && make ./bin/main && ./bin/main",
       "runAtStart": true
     }
   }

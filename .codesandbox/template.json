@@ -1,10 +1,7 @@
 {
-  "title": "Docker",
-  "description": "The easiest way to get started from Docker in CodeSandbox",
-  "iconUrl": "https://github.com/codesandbox/sandbox-templates/blob/main/docker/.codesandbox/icon.png?raw=true",
-  "tags": [
-    "docker",
-    "containers"
-  ],
+  "title": "C++ Workspace",
+  "description": "Project cung cấp môi trường thực thi các chương trình viết bằng C++ trên CodeSandbox (sử dụng docker image: ubuntu)",
+  "iconUrl": "https://raw.githubusercontent.com/isocpp/logos/master/cpp_logo.png?raw=true",
+  "tags": ["C++", "docker", "containers"],
   "published": true
 }

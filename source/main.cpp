@@ -1,5 +1,11 @@
+#include "iostream"
 using namespace std;
 
 int main(){
-    cout << "Hello C++";
+    string name;
+    cout << "Hello bro!, wat your name?\n";
+    cout << "...'s answer: ";
+    cin >> name;
+    cout << "Hello " + name + ". Nice to meet you!";    
+    return 0;
 }
