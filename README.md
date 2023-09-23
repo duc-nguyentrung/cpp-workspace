@@ -1,4 +1,4 @@
-# CPP Workspace mẫu cho việc học lập trình (dành cho sinh viên ĐHHHVN)
+# CPP Workspace mẫu cho việc học lập trình
 
 Template sử dụng g++ trên môi trường ubuntu để thực thi source code viết bằng C++
 
