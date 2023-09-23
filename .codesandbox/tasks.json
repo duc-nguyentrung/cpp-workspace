@@ -4,8 +4,13 @@
 
   // These tasks can be run from CodeSandbox. Running one will open a log in the app.
   "tasks": {
+    "whereis gcc": {
+      "name": "whereis gcc",
+      "command": "whereis gcc",
+      "runAtStart": true
+    },
     "whereis htop": {
-      "name": "whereis htop",
+      "name": "whereis gcc",
       "command": "whereis htop",
       "runAtStart": true
     }
