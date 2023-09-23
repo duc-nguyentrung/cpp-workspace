@@ -2,7 +2,7 @@
 FROM ubuntu
 
 # Example; install htop by default
-RUN apt update -y && apt install -y htop
+RUN apt update -y && apt install -y build-essential manpages-dev
 
 # The project will be mounted in /workspace by default
 
