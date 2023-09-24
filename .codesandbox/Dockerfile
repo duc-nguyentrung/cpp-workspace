@@ -2,7 +2,7 @@
 FROM ubuntu
 
 # Example; install htop by default
-RUN apt update -y && apt install -y build-essential manpages-dev
+RUN apt update -y && apt install -y build-essential gcc gdb manpages-dev libcunit1 libcunit1-dev
 
 # The project will be mounted in /workspace by default
 

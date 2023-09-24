@@ -1,0 +1,32 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "create build directory",
+            "command": "mkdir -p ${workspaceFolder}/output/${relativeFileDirname}",
+        },
+        {
+            "type": "shell",
+            "label": "g++ build active file",
+            "command": "/usr/bin/g++",
+            "args": [                
+                "-g",
+                "${file}",
+                "-o",
+                "${workspaceFolder}/output/${relativeFileDirname}/${fileBasenameNoExtension}.out"
+            ],
+            "options": {
+                // "cwd": "/usr/bin"
+                "cwd": "${workspaceFolder}"
+            }
+        },
+        {
+            "label": "build",
+            "dependsOn": [
+                "create build directory",
+                "g++ build active file"
+            ]
+        }
+    ],
+    "version": "2.0.0"
+}

@@ -6,6 +6,6 @@ int main(){
     cout << "Hi bro!, what's your name?\n";
     cout << "...'s answer: ";
     cin >> name;
-    cout << "Hello " + name + ". Nice to meet you!";    
+    cout << "Hello " + name + ". Nice to meet you!\n";    
     return 0;
 }
