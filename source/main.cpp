@@ -19,7 +19,7 @@ void printArray(int N, int* arr){
  * Xem chi tiết tại: https://www.geeksforgeeks.org/bubble-sort
 */
 void bubbleSort(){
-    int a[] = { 100, 34, 29, 1, 20, 5 };
+    int a[] = { 100, 34, 29, 1, 20, 5, 22, 8 };
     int aSize = end(a) - begin(a);
     cout << "Mang A: ";                                                     // <--- log
     printArray(aSize, a);                                                   // <--- log
