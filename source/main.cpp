@@ -25,17 +25,19 @@ void bubbleSort(){
     printArray(aSize, a);                                                   // <--- log
     for(int i = aSize - 1; i > 0; i--){
         cout << "  - Bước " << aSize - i;                                   // <--- log
-        cout << "\t A lúc bắt đầu xét: ";                            // <--- log
+        cout << "\t A lúc bắt đầu xét: ";                                   // <--- log
         printArray(aSize, a);                                               // <--- log
-        for(int j = 1; j <= i; j++){
+        for(int j = 0; j < i; j++){
             cout << "     - Vòng con j = " << j << ", a[j] = " << a[j];     // <--- log
-            cout << ",\ta[j-1] = " << a[j-1];                               // <--- log
-            if (a[j-1] > a[j]){
-                cout << " => Đổi chỗ ";                                     // <--- log
-                int c = a[j-1];
-                a[j-1] = a[j];
-                a[j] = c;                
-            }            
+            cout << ",\ta[j+1] = " << a[j+1];                               // <--- log
+            if (a[j] > a[j+1]){
+                cout << "\t=> Đổi chỗ ";                                    // <--- log
+                int c = a[j];
+                a[j] = a[j+1];
+                a[j+1] = c;                
+            } else {
+                cout << "\t=> Không đổi ";                                  // <--- log
+            }
             cout << " \t=> A: ";                                            // <--- log
             printArray(aSize, a);                                           // <--- log
         }                
