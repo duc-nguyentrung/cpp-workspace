@@ -1,10 +1,10 @@
 {
   "tasks": [
-    //     {
-    //       "type": "shell",
-    //       "label": "create build directory",
-    //       "command": "mkdir -p ${workspaceFolder}/output/${relativeFileDirname}"
-    //     },
+        {
+          "type": "shell",
+          "label": "create build directory",
+          "command": "mkdir -p ${workspaceFolder}/output"
+        },
     {
       "type": "shell",
       "label": "g++ build active file",
@@ -14,7 +14,7 @@
         "-g",
         "${file}",
         "-o",
-        "${workspaceFolder}/output/${fileBasenameNoExtension}.out"
+        "${workspaceFolder}/output/${fileBasenameNoExtension}_vscode.out"
       ],
       "options": {
         // "cwd": "/usr/bin"
@@ -24,7 +24,7 @@
     {
       "label": "build",
       "dependsOn": [
-        // "create build directory",
+        "create build directory",
         "g++ build active file"
       ]
     }

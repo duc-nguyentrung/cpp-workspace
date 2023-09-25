@@ -7,5 +7,6 @@ int main(){
     cout << "...'s answer: ";
     cin >> name;
     cout << "Hello " + name + ". Nice to meet you!\n";    
+    cout << "--------------END--------------------\n\n";    
     return 0;
 }
