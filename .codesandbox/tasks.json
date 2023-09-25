@@ -6,7 +6,7 @@
   "tasks": {
     "start": {
       "name": "start: main.cpp",
-      "command": "g++ source/main.cpp -o ./bin/main && make ./bin/main && ./bin/main",
+      "command": "g++ -I./source/libs ./source/main.cpp -o ./output/main.out && make ./output/main.out && ./output/main.out",
       "runAtStart": true
     }
   }
