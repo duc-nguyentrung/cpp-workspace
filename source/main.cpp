@@ -23,11 +23,11 @@ void bubbleSort(){
     int aSize = end(a) - begin(a);
     cout << "Mang A: ";                                                     // <--- log
     printArray(aSize, a);                                                   // <--- log
-    for(int i = aSize - 1; i > 0; i--){
-        cout << "  - Bước " << aSize - i;                                   // <--- log
+    for(int i = 0; i < aSize; i++){
+        cout << "  - Bước " << i + 1;                                       // <--- log
         cout << "\t A lúc bắt đầu xét: ";                                   // <--- log
         printArray(aSize, a);                                               // <--- log
-        for(int j = 0; j < i; j++){
+        for(int j = 0; j < aSize - i - 1; j++){
             cout << "     - Vòng con j = " << j << ", a[j] = " << a[j];     // <--- log
             cout << ",\ta[j+1] = " << a[j+1];                               // <--- log
             if (a[j] > a[j+1]){
