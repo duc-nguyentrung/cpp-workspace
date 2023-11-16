@@ -4,4 +4,4 @@ Template sử dụng g++ trên môi trường ubuntu để thực thi source cod
 
 Mặc định, file sử dụng để compile và thực thi là source/main.CPP
 
-Sử dụng terminal window, chọn "start: main.cpp"
+Sử dụng terminal window, chọn "start: main.cpp".
